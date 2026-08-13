@@ -40,7 +40,7 @@ jobs:
 
       - name: Terraform Init
         working-directory: ${{ env.TF_WORKING_DIR }}
-        run: terraform init -backend-config="key=datalake-inep.dev.tfstate"
+        run: terraform init -backend-config="key=terraform.dev.tfstate"
 
       - name: Terraform Validate
         working-directory: ${{ env.TF_WORKING_DIR }}
@@ -100,7 +100,7 @@ jobs:
 
       - name: Terraform Init
         working-directory: ${{ env.TF_WORKING_DIR }}
-        run: terraform init -backend-config="key=datalake-inep.dev.tfstate"
+        run: terraform init -backend-config="key=terraform.dev.tfstate"
 
       - name: Terraform Apply
         working-directory: ${{ env.TF_WORKING_DIR }}
